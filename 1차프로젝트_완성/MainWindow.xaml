@@ -1,0 +1,46 @@
+﻿<Window x:Class="_1차프로젝트_완성.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="712" Width="1558">
+    <Canvas Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}">
+        <Label Content="위험물 감지(앞부분)" Height="36" Canvas.Left="187" Canvas.Top="10" Width="460" Background="#FFFFEB21" Foreground="Red" HorizontalContentAlignment="Center" FontSize="20"/>
+        <Label Content="시선감지" Height="36" Canvas.Left="931" Canvas.Top="10" Width="460" Background="#FF21FF35" Foreground="Red" HorizontalContentAlignment="Center" FontSize="20"/>
+        <Line X1="213" X2="213" Y1="0" Y2="800" Canvas.Top="10" Canvas.Left="569" Stroke="Black" Height="672" Width="236"></Line>
+        <Canvas Height="480" Width="640" Name="Canvas2" Canvas.Left="824" Canvas.Top="80">
+            <Image Canvas.Left="0" Canvas.Top="0" 
+                   Height="480"  Width="640" 
+                   Name="image2" Stretch="Fill"/>
+            <Ellipse Canvas.Left="0" Canvas.Top="0" 
+                     Height="28" Width="28"
+                     Name="ellipse1"  
+                     Fill="#FF0A3EEE" />
+            <TextBlock Height="51" Canvas.Left="140" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="531" Width="471" Name="text2" FontSize="36"/>
+            <Rectangle Fill="#FFFF0C00" Height="10" Canvas.Left="10" Stroke="Black" Canvas.Top="10" Width="10" Name="rect2"/>
+        </Canvas>
+        
+        <Canvas Height="480" Width="640" Name="Canvas1" Margin="103,80,807,121">
+            <Image Name="image1" Stretch="Fill" Canvas.Top="0" Canvas.Left="0"
+                   Height="480" Width="640"
+                   />
+
+            <Line Name="line1" X1="213" X2="213" Y1="0" Y2="480" Canvas.Top="0" Canvas.Left="0" Stroke="Red"></Line>
+            <Line Name="line2" X1="426" X2="426" Y1="0" Y2="480" Canvas.Top="0" Canvas.Left="0" Stroke="Red"></Line>
+            <Line Name="line3" X1="0" X2="640" Y1="160" Y2="160" Canvas.Top="0" Canvas.Left="0" Stroke="Red"></Line>
+            <Line Name="line4" X1="0" X2="640" Y1="320" Y2="320" Canvas.Top="0" Canvas.Left="0" Stroke="Red"></Line>
+
+
+            <TextBox Canvas.Left="94" Canvas.Top="521" Height="43" Name="text1" Width="219" />
+            <Button Canvas.Left="331" Canvas.Top="521" Content="비율에대한 색깔" Height="45" Name="button1" Width="309" Click="button1_Click" />
+            <Image Height="160" Width="214" Name="Image_critical" Stretch="Fill" Source="Properties/Critical_re.png" Visibility="Collapsed" Canvas.Left="-234" Canvas.Top="103" />
+            <Image Height="160" Width="214" Name="Image_LongCritical1" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical2" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Left="214" Opacity="0.5" />
+            <Image Height="160" Width="214" x:Name="Image_LongCritical3" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Left="426" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical4" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Top="160" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical5" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Left="214" Canvas.Top="160" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical6" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Left="428" Canvas.Top="160" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical7" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Top="320" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical8" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Top="320" Canvas.Left="214" Opacity="0.5"/>
+            <Image Height="160" Width="214" x:Name="Image_LongCritical9" Source="Properties/Critical_2second.jpg" Stretch="Fill" Visibility="Collapsed" Canvas.Top="320" Canvas.Left="426" Opacity="0.5"/>
+        </Canvas>
+    </Canvas>
+</Window>
